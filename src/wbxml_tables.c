@@ -2604,7 +2604,19 @@ const WBXMLTagEntry sv_airsync_tag_table[] = {
     { "ConversationMode",       0x00, 0x27 }, /* r8.0: not supported when the MS-ASProtocolVersion header is set to 12.1 */
     { "MaxItems",               0x00, 0x28 }, /* r8.0: not supported when the MS-ASProtocolVersion header is set to 12.1 */
     { "HeartbeatInterval",      0x00, 0x29 }, /* r8.0: not supported when the MS-ASProtocolVersion header is set to 12.1 */
-
+    
+    { "BusinessAddressCity",    0x01, 0x0d }, /* since r1.0 */
+    { "BusinessAddressCountry", 0x01, 0x0e }, /* since r8.0 */
+    { "BusinessAddressPostalCode", 0x01, 0x0f }, /* since r8.0 */
+    { "BusinessAddressState",   0x01, 0x10 }, /* since r8.0 */
+    { "BusinessAddressStreet",  0x01, 0x11 }, /* since r8.0 */
+    { "BusinessAddressStreet",  0x01, 0x11 }, /* since r8.0 */
+    { "HomeAddressCity",        0x01, 0x21 }, /* since r1.0 */
+    { "HomeAddressCountry",     0x01, 0x22 }, /* since r1.0 */
+    { "HomeAddressPostalCode",  0x01, 0x23 }, /* since r1.0 */
+    { "HomeAddressState",       0x01, 0x24 }, /* since r1.0 */
+    { "HomeAddressStreet",      0x01, 0x25 }, /* since r1.0 */
+    
     /* Code Page: Contacts (since v2.5 and r1.0) */
     { "Anniversary",            0x01, 0x05 }, /* since r1.0 */
     { "AssistantName",          0x01, 0x06 }, /* since r1.0 */
