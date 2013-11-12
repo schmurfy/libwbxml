@@ -3235,6 +3235,11 @@ const WBXMLTagEntry sv_airsync_tag_table[] = {
     { "ContentOwner",           0x18, 0x17 }, /* since r8.0? */
     { "RemoveRightsManagementDistribution",0x18, 0x18 }, /* since r8.0? */
 
+    { "Annotations",            0xFE, 0x05 }, /* since r14.0? */
+    { "Annotation",             0xFE, 0x06 }, /* since r14.0? */
+    { "Name",                   0xFE, 0x07 }, /* since r14.0? */
+    { "Value",                  0xFE, 0x08 }, /* since r14.0? */
+
     { NULL,                  0x00, 0x00 }
 };
 
@@ -3276,6 +3281,7 @@ const WBXMLAttrEntry sv_airsync_attr_table[] = {
  *   Email2:              http://synce.org/formats/airsync_wm5/email2
  *   Notes:               http://synce.org/formats/airsync_wm5/notes
  *   RightsManagement:    http://synce.org/formats/airsync_wm5/rightsmanagement
+ *   WindowsLive:         http://social.msdn.microsoft.com/Forums/en-US/75562e26-158c-45d3-b114-b2b82928c3a7/undocumented-activesync-codepage?forum=os_exchangeprotocols
  *
  */
 const WBXMLNameSpaceEntry sv_airsync_ns_table[] = {
@@ -3304,6 +3310,7 @@ const WBXMLNameSpaceEntry sv_airsync_ns_table[] = {
     { "http://synce.org/formats/airsync_wm5/email2",            0x16 },     /**< Code Page 22 */
     { "http://synce.org/formats/airsync_wm5/notes",             0x17 },     /**< Code Page 23 */
     { "http://synce.org/formats/airsync_wm5/rightsmanagement",  0x18 },     /**< Code Page 24 */
+    { "http://social.msdn.microsoft.com/Forums/en-US/75562e26-158c-45d3-b114-b2b82928c3a7/undocumented-activesync-codepage?forum=os_exchangeprotocols",       0xFE },     /**< Code Page 254 */
     { NULL,                                                     0x00 }
 };
 
@@ -3333,6 +3340,7 @@ const WBXMLNameSpaceEntry sv_activesync_ns_table[] = {
     { "Email2:",            0x16 },     /**< Code Page 22 */
     { "Notes:",             0x17 },     /**< Code Page 23 */
     { "RightsManagement:",  0x18 },     /**< Code Page 24 */
+    { "WindowsLive:",       0xFE },     /**< Code Page 254 */
     { NULL,                 0x00 }
 };
 
